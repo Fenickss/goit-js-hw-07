@@ -13,32 +13,34 @@ const images = [
   },
 ];
 
-// const gallery = document.querySelector("#gallery");
-// gallery.classList.add("gallery");
+const gallery = document.querySelector("#gallery");
+gallery.classList.add("gallery");
 
-// const makeGalleryItemMarkup = (image) => {
-//   const { url, alt } = image;
-//   return `
-//   <li class="gallery-item">
-//    <img src= ${url} alt= ${alt} ></img>
-//   </li >`;
-// };
+const makeGalleryItemMarkup = (image) => {
+  const { url, alt } = image;
+  return `
+  <li class="gallery-item">
+   <img src= ${url} alt= ${alt} ></img>
+  </li >`;
+};
 
-// const makeGalleryMarkup = images.map(makeGalleryItemMarkup).join("");
+const makeGalleryMarkup = images.map(makeGalleryItemMarkup).join("");
 
-// console.log(makeGalleryMarkup);
+console.log(makeGalleryMarkup);
 
-// gallery.insertAdjacentHTML("beforeend", makeGalleryMarkup);
+gallery.insertAdjacentHTML("beforeend", makeGalleryMarkup);
 
-const ulEl = document.querySelector("#gallery");
+// const ulEl = document.querySelector("#gallery");
 
-const image = images.reduce(
-  (string, item) =>
-    string +
-    `<img src = "${item.url}" alt = "${item.alt}"  width = "150" height = "100" />`,
-  ""
-);
-ulEl.innerHTML = image;
+// const image = images.reduce(
+//   (string, item) =>
+//     string +
+//     `<img src = "${item.url}" alt = "${item.alt}"  width = "150" height = "100" />`,
+//   ""
+// );
+// ulEl.innerHTML = image;
+
+// =================================================================
 
 // images.forEach(el => {
 //   ulEl.insertAdjacentHTML(
