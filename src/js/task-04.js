@@ -20,7 +20,6 @@
 //   //   console.log("counterValue", counterValue);
 // });
 
-
 const counterValue = document.querySelector("#value");
 const buttons = document.querySelectorAll("#counter button");
 
@@ -39,3 +38,4 @@ incrementBtn.addEventListener("click", () => {
   calcValue += step;
   counterValue.innerHTML = calcValue;
 });
+
